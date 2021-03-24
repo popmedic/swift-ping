@@ -192,7 +192,7 @@ final public class Ping: Pinging {
     private var ttlWorkItems = [UInt16: DispatchWorkItem]()
     
     public init(usingFamily: sa_family_t = sa_family_t(AF_INET),
-         usingWait: TimeInterval = 0.0,
+         usingWait: TimeInterval = 1.0,
          usingTTL: TimeInterval = 5.0) {
         self.usingFamily = usingFamily
         self.usingWait = usingWait
